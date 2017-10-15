@@ -22,4 +22,7 @@ $(document).ready(function() {
     clock.setCountdown(true);
     clock.start();
 
+
+    $(".modal").modal();
+    $(".collapsible").collapsible();
 });

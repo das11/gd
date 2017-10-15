@@ -1,5 +1,10 @@
 .b {
     margin: auto;
-    margin-top: 20%;
+    margin-top: 4%;
     width: 50%;
+}
+
+.chip_center{
+	margin: auto;
+	width: 50%;
 }
