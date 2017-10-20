@@ -18,11 +18,12 @@ $(document).ready(function() {
         }
     });
 		    
-    clock.setTime(8288580);
+    clock.setTime(4882868);
     clock.setCountdown(true);
     clock.start();
 
 
     $(".modal").modal();
     $(".collapsible").collapsible();
+    // $('#cl').empty();​
 });
