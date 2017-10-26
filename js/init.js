@@ -25,5 +25,6 @@ $(document).ready(function() {
 
     $(".modal").modal();
     $(".collapsible").collapsible();
+    $(".button-collapse").sideNav();
     // $('#cl').empty();​
 });
