@@ -4,6 +4,13 @@
     width: 50%;
 }
 
+.cont{
+	width: 90%;
+	height: 100px;
+	margin: auto;
+	background-color: lightblue;
+}
+
 .chip_center{
 	margin: auto;
 	width: 50%;
