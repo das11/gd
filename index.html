@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/flipclock.css">
 
+
 	<style>
     countdown-timer {
       display: block;
@@ -85,6 +86,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<div class="row" id="about">
 		<div class="col s12 m10 offset-m1">
@@ -179,17 +181,12 @@
   		</div>
 	</div>
 
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    	<polygon fill="teal" points="0,0 0,100 100,0"/>
-  	</svg>
-	<div class="container" id="guests">
-			<p class="flow-text">
-				<h3 style="text-align: center;" class="red-text">Speakers</h3>
-			</p>
+
+	<div class="card-panel teal lighten-1">
+		<p class="flow-text">
+				<h2 style="text-align: center;" class="white-text">Speakers</h2>
+		</p>
 	</div>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    	<polygon fill="teal" points="0,100 100,0 100,100"/>
-  	</svg>
 
 
 	<div class="row">
@@ -213,17 +210,9 @@
 		</div>
 	</div>
 
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    	<polygon fill="teal" points="0,0 0,100 100,0"/>
-  	</svg>
-	<div class="container" id="guests">
-			<p class="flow-text">
-				<h3 style="text-align: center;" class="red-text">Pre-Event Activities</h3>
-			</p>
-	</div>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    	<polygon fill="teal" points="0,100 100,0 100,100"/>
-  	</svg>
+  	<div class="card-panel teal lighten-1">
+  		<h2 style="text-align: center;" class="white-text">Pre-Event Activities</h2>
+  	</div>
 
 	<div class="row" id="activities">
 	<!-- card1 -->
@@ -458,15 +447,10 @@
 		</div>
 	</div>
 
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    	<polygon fill="teal" points="0,0 0,100 100,0"/>
-  	</svg>
-	<div class="row container" id="partners">
-		<h3 style="text-align: center;" class="red-text text-darken-1">Sponsors</h3>
-	</div>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    	<polygon fill="teal" points="0,100 100,0 100,100"/>
-  	</svg>
+
+	<div class="card-panel teal lighten-1">
+		<h2 style="text-align: center;" class="white-text text-darken-1">Sponsors</h2>
+	</div>  	
 
   	<div class="container">
   		<div class="row">
@@ -578,12 +562,14 @@
                 </ul>
                </div>
               <div class="col l6 s12">
-              <ul>
+              	<ul>
               		<li><a class="grey-text text-lighten-3" href="#!">Gift Partners : <br>&nbsp;My Tradition<br>&nbsp;Sandhya Fabric Design</a></li>
-              </ul>
-            	</div>
+              	</ul>
+              </div>
             </div>
           </div>
+
+
           <div class="footer-copyright">
             <div class="container">
             	<div class="row">
@@ -616,6 +602,7 @@
       <div class="col s1">12</div>
     </div> -->
 
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/flipclock.min.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
@@ -624,8 +611,13 @@
     <script src="js/TweenMax.js"></script>
   	<script src="js/countdown.js"></script>
   	<script>
+
+  	ev_date = new Date();
+  	now = Date.now();
+
+  	ev_date.setFullYear(2017, 11, 16);
     var countDown = new IOWA.CountdownTimer.Core(
-      new Date(Date.now() + 45*24*60*60*1000),
+      new Date(now + (ev_date - now)),
       document.querySelector('countdown-timer')
     );
     countDown.setUp(false);
